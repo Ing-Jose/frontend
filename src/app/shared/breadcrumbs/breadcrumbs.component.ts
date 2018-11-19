@@ -18,7 +18,7 @@ export class BreadcrumbsComponent implements OnInit {
     this.getData()
     .subscribe( data =>{
         
-      console.log(data);
+      // console.log(data);
       this.label = data.titulo;
       this.titleService.setTitle(this.label);//cambiamdo el titulo de la pestaña
       //Agregando meta

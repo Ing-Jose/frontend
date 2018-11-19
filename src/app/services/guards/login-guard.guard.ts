@@ -9,7 +9,7 @@ export class LoginGuardGuard implements CanActivate {
   constructor(public _usuarioService:UsuarioService, public router: Router){}
   canActivate(): boolean {
     if (this._usuarioService.estalogueado()) {
-      console.log('paso por login guard');
+      // console.log('paso por login guard');
       return true;
     }else{
       console.log('bloequeado');
