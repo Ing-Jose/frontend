@@ -10,7 +10,9 @@ import { LoginGuardGuard } from './services/service.index';
 
 const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent, canActivate: [LoginGuardGuard] },
+    { path: 'register', component: RegisterComponent },
+    //bloquedo para que no se pueda acceder quien no este registrado
+    // { path: 'register', component: RegisterComponent, canActivate: [LoginGuardGuard] },
     { path: '**', component: NopagefoundComponent }
 ];
 
